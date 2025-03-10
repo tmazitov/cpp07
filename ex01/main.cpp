@@ -3,7 +3,7 @@
 
 void test1()
 {
-	std::cout << "--- test 1 ---\n";
+	std::cout << "--- Integer test ---\n";
 	int array[3] = {5, 6, 7};
 	
 	iter(array, 3, minus<int>);
@@ -12,7 +12,7 @@ void test1()
 
 void test2()
 {
-	std::cout << "--- test 2 ---\n";
+	std::cout << "--- Float test ---\n";
 	double array[] = {2.1, 2.2, 2.3};
 	int size = sizeof(array) / sizeof(array[0]);
 
@@ -24,7 +24,7 @@ void test2()
 
 void test3()
 {
-	std::cout << "--- test 3 ---\n";
+	std::cout << "--- Chars/Strings test ---\n";
 	char array[] = {'a', 'b', 'c'};
 	int size = sizeof(array) / sizeof(array[0]);
 	iter(array, size, minus<char>);
@@ -33,7 +33,7 @@ void test3()
 
 void test4()
 {
-	std::cout << "--- test 4 ---\n";
+	std::cout << "--- Strings test ---\n";
 	std::string array[] = {"hello", "world"};
 	int size = sizeof(array) / sizeof(array[0]);
 	iter(array, size, power<std::string>);
